@@ -8,6 +8,7 @@ const Contact = ({ name, number }) => {
             <p>{name}</p>
             <p>{number}</p>
         </div>
+        
     );
 
 };
