@@ -1,0 +1,48 @@
+.formContainer {
+    max-width: 320px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.formField {
+    margin-bottom: 20px;
+}
+
+.labelForm {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputForm {
+    width: 280px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.errorForm {
+    color: rgb(235, 27, 27);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.btnForm {
+    display: block;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 auto;;
+}
+
+.btnForm:hover {
+    background-color: #0056b3;
+}

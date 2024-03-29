@@ -1,16 +1,32 @@
 import React from 'react';
+import styles from "./Contact.module.css";
 
 
-const Contact = ({ name, number }) => {
+const Contact = ({ contact, onDelete }) => {
+  const { id, name, number } = contact;
 
-    return (
-        <div>
-            <p>{name}</p>
-            <p>{number}</p>
+
+  const handleDelete = () => {
+    onDelete(id);
+  };
+ 
+  return (
+    <li className={styles.contact}>
+      <div className={styles.infoContainer}>
+        <span className={styles.icon}>👤</span>
+        <span className={styles.name}>{name}</span>
+      </div>
+      <div className={styles.infoContainer}>
+        <span className={styles.icon}>📞</span>
+        <span className={styles.number}>{number}</span>
+      </div>
+      <div className={styles.buttonContainer}>
+              <button className={styles.delete} onClick={handleDelete}>
+          Delete
+        </button>
         </div>
-        
-    );
-
+    </li>
+  );
 };
 
 
